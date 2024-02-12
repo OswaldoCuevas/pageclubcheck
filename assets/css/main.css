@@ -3343,9 +3343,9 @@ input, select, textarea {
 			color: #636363;
 		}
 
-		#main a:hover {
+/* 		#main a:hover {
 			color: #636363;
-		}
+		} */
 
 		#main strong, #main b {
 			color: #636363;
@@ -3866,4 +3866,18 @@ input, select, textarea {
 			
 		}
 		
-		
+		.btn-download{
+			background-color: transparent;
+			color: #5f4d93;
+			border: none;
+			border: 2px solid #5f4d93;
+			padding: 15px 20px;
+			border-radius: 15px;
+			font-family: 'Arial';
+			transition: all 0.1s ease-out;
+		}
+		.btn-download:hover{
+			background-color: #5f4d93;
+			color:white;
+			border: 2px solid #5f4d93;
+		}
