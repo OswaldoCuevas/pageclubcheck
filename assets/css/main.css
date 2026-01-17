@@ -4187,6 +4187,54 @@ input, select, textarea {
 	display: inline-block;
 }
 
+/* Hero Animations */
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.hero-text h1 {
+	animation: slideDown 0.5s ease-out forwards;
+	opacity: 0;
+}
+
+.hero-subtitle {
+	animation: slideDown 0.5s ease-out 0.15s forwards;
+	opacity: 0;
+}
+
+.hero-highlight {
+	animation: slideDown 0.5s ease-out 0.3s forwards;
+	opacity: 0;
+}
+
+.hero-cta {
+	animation: slideUp 0.5s ease-out 0.45s forwards;
+	opacity: 0;
+}
+
+.hero-mockup {
+	animation: slideDown 0.6s ease-out 0.2s forwards;
+	opacity: 0;
+}
+
 /* Hero Text Layout */
 .hero-text {
 	max-width: 100%;
@@ -4201,6 +4249,8 @@ input, select, textarea {
 	margin-bottom: 0.8em;
 	font-weight: 700;
 	color: #1a1a2e;
+	animation: slideDown 0.5s ease-out forwards;
+	opacity: 0;
 }
 
 .hero-subtitle {
@@ -4208,6 +4258,8 @@ input, select, textarea {
 	color: #555555;
 	margin-bottom: 1.5em;
 	line-height: 1.6;
+	animation: slideDown 0.5s ease-out 0.15s forwards;
+	opacity: 0;
 }
 
 .hero-highlight {
@@ -4221,6 +4273,8 @@ input, select, textarea {
 	font-weight: 500;
 	color: #5f4d93;
 	border: 1px solid rgba(95, 77, 147, 0.2);
+	animation: slideDown 0.5s ease-out 0.3s forwards;
+	opacity: 0;
 }
 
 .hero-highlight .icon {
@@ -4234,6 +4288,8 @@ input, select, textarea {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	margin-top: 2em;
+	animation: slideUp 0.5s ease-out 0.45s forwards;
+	opacity: 0;
 }
 
 /* Hero Laptop Mockup */
@@ -4242,6 +4298,8 @@ input, select, textarea {
 	max-width: 600px;
 	z-index: 2;
 	perspective: 1000px;
+	animation: slideDown 0.6s ease-out 0.1s forwards;
+	opacity: 0;
 }
 
 .laptop-frame {
