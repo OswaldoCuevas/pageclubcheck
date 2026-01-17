@@ -6,9 +6,10 @@
 -->
 <html>
 	<head>
-		<title>ClubCheck</title>
+		<title>ClubCheck - Sistema de Gestión para Clubes</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+		<meta name="description" content="Sistema integral para clubes: control de acceso, membresías, ventas y más. Empieza gratis con hasta 20 usuarios.">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/icon.ico" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -18,44 +19,63 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo">
-							<span class="content-logo">
-								<span class="icon">
-									<span class="text1">Club</span><span class="text2">Check</span>
-								</span>
-							</span>
-						</span>
-						<h1>Bienvenido!</h1>
-						<p>Quieres saber más acerca de ClubCheck? Continúa leyendo</p>
+				<!-- Header / Hero Principal -->
+					<header id="header" class="alt hero-split">
+						<div class="hero-content">
+							
+							<div class="hero-text">
+								<h1>Administra tu club<br>de forma simple y profesional</h1>
+								<p class="hero-subtitle">Control de acceso, membresías, ventas y reportes en un solo sistema.</p>
+								<p class="hero-highlight">
+									<span class="icon solid fa-check-circle"></span>
+									Empieza gratis con hasta 20 usuarios. Sin tarjeta de crédito.
+								</p>
+							</div>
+							<div class="hero-cta">
+								<a class="btn-download primary" href="/assets/ClubCheck.rar" download="ClubCheck.rar">
+									<span class="icon solid fa-download"></span> Descargar gratis
+								</a>
+								<a class="btn-whatsapp" href="https://wa.me/526131210267?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20ClubCheck" target="_blank">
+									<span class="icon brands fa-whatsapp"></span> Hablar con un asesor
+								</a>
+							</div>
+						</div>
+						
+						<!-- Mockup de computadora -->
+						<div class="hero-mockup">
+							<div class="laptop-frame">
+								<div class="laptop-screen">
+									<img src="/images/inicio.png" alt="ClubCheck - Panel principal">
+								</div>
+								<div class="laptop-base"></div>
+							</div>
+						</div>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">ClubCheck</a></li>
-							<li><a href="#first">Ventajas</a></li>
-							<li><a href="#second">Vista previa</a></li>
-							<li><a href="#cta">Costos</a></li>
+							<li><a href="#beneficios" class="active">Beneficios</a></li>
+							<li><a href="#funcionalidades">Funcionalidades</a></li>
+							<li><a href="#demo">Vista previa</a></li>
+							<li><a href="#gratis">Plan gratuito</a></li>
+							<li><a href="#contacto">Contacto</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
+						<!-- Sección: Problema y Solución -->
+							<section id="beneficios" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>ClubCheck</h2>
+											<h2>¿Cansado de administrar tu club con hojas de cálculo?</h2>
 										</header>
-										<p>ClubCheck es una solución tecnológica integral diseñada para optimizar la gestión de clubes y centros deportivos. 
-											Nuestra plataforma permite administrar eficientemente las membresías, controlar el acceso al establecimiento 
-											y mantener una comunicación constante con los miembros acerca de su estado de afiliación.</p>
-										<a class="btn-download" href="/assets/ClubCheck.rar" download="ClubCheck.rar">Descargar aplicación de escritorio</a>
-										
+										<p>Sabemos que manejar membresías, cobros, accesos y ventas puede ser un caos. 
+											<strong>ClubCheck</strong> te ayuda a tener todo bajo control desde una sola aplicación, 
+											sin complicaciones técnicas y sin necesidad de internet constante.</p>
 									</div>
 									<span class="logo2">
 										<span class="content-logo">
@@ -67,133 +87,237 @@
 								</div>
 							</section>
 
-						<!-- First Section -->
-							<section id="first" class="main special">
+						<!-- Sección: Funcionalidades principales -->
+							<section id="funcionalidades" class="main special">
 								<header class="major">
-									<h2>Ventajas</h2>
+									<h2>Todo lo que necesitas para tu club</h2>
+									<p>Funcionalidades diseñadas para hacerte la vida más fácil</p>
 								</header>
 								<ul class="features">
 									<li>
 										<span class="icon solid major style1 fa-fingerprint"></span>
-										<h3>Control de acceso con huella dactilar</h3>
-										<p>Usa un lector de huella para poder detecar el estado de la suscripción 
-											del usuario y controla el acceso al establecimiento (se puede ajustar una cerradura o torniquete con costo extra).</p>
+										<h3>Control de acceso inteligente</h3>
+										<p>Registra la entrada de socios con huella dactilar. 
+											El sistema valida automáticamente si la membresía está activa.</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-clock"></span>
-										<h3>Listado de asistencia</h3>
-										<p>Obtiene un promedio de la cantidad de usuarios que asisten en una hora específica 
-											, esto ayuda a los usuarios a tomar la decisión 
-										de la hora a la que desean asisitir.</p>
+										<span class="icon solid major style3 fa-id-card"></span>
+										<h3>Gestión de membresías</h3>
+										<p>Administra planes, fechas de vencimiento y renovaciones. 
+											Nunca pierdas el control de quién está al día con sus pagos.</p>
 									</li>
 									<li>
-										<span class="icon major style5 fa-user"></span>
-										<h3>Administradores</h3>
-										<p>Está protegido para que solo los administradores puedan acceder a la aplicación con sus credenciales y guarda todas sus acciones en un historial.</p>
+										<span class="icon brands major whatsapp-green fa-whatsapp"></span>
+										<h3>Notificaciones por WhatsApp</h3>
+										<p>Envía recordatorios automáticos de vencimiento.</p>
 									</li>
 								</ul>
 								<ul class="features">
 									<li>
-										<span class="icon brands major whatsapp-green fa-whatsapp"></span>
-										<h3>Administración de membresías por WhatsApp</h3>
-										<p>Mantiene al cliente informado del estado de su membresía enviando mensajes automáticos por WhatsApp.</p>
+										<span class="icon solid major style2 fa-shopping-cart"></span>
+										<h3>VVenta de productos</h3>
+										<p>Vende suplementos, bebidas y productos desde el mismo sistema. 
+											Lleva el control de cada venta fácilmente.</p>
+									</li>
 									<li>
-										<span class="icon solid major style5 fa-layer-group"></span>
-										<h3>Constantes actualizaciones</h3>
-										<p>Estaremos en constantes actualizaciones para brindar una mejor experiencia.</p>
+										<span class="icon solid major style4 fa-boxes"></span>
+										<h3>Control de inventario</h3>
+										<p>Ver la cantidad de productos disponibles y recibir alertas cuando el stock sea bajo.</p>
+									</li>
+									<li>
+										<span class="icon solid major style5 fa-chart-bar"></span>
+										<h3>Reportes y estadísticas</h3>
+										<p>Visualiza ingresos, asistencia, productos vendidos y más. 
+											Toma decisiones basadas en datos reales de tu negocio.</p>
 									</li>
 								</ul>
-								<footer class="major">
-									
-								</footer>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-door-open"></span>
+										<h3>Compatible con torniquetes</h3>
+										<p>Conecta el sistema con torniquetes para automatizar el acceso 
+											y evitar entradas no autorizadas.</p>
+									</li>
+									<li>
+										<span class="icon solid major style3 fa-history"></span>
+										<h3>Historial completo</h3>
+										<p>Cada pago, cada entrada y cada venta queda registrada. 
+											Consulta el historial cuando lo necesites.</p>
+									</li>
+									<li>
+										<span class="icon solid major style5 fa-bolt"></span>
+										<h3>Rápido y fácil de usar</h3>
+										<p>Interfaz intuitiva que no requiere conocimientos técnicos. 
+											En minutos estarás funcionando al 100%.</p>
+									</li>
+								</ul>
 							</section>
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
+						<!-- Sección: Vista previa -->
+							<section id="demo" class="main special">
 								<header class="major">
-									<h2>Vista previa de la aplicación</h2>
+									<h2>Conoce la aplicación por dentro</h2>
+									<p>Interfaz moderna, limpia y fácil de navegar</p>
 								</header>
-								<p>A continuación se muestra un vista previa de cada sección de la aplicación</p>
-								<div>
-									<header class="major">
-										<h2>Inicio de sesión</h2>
-									</header>
-									<img src="/images/login.png" alt="" width="80%" srcset="">
-								</div>
-								<div>
-									<header class="major">
-										<h2>Inicio</h2>
-									</header>
-									<img src="/images/inicio.png" alt="" width="100%" srcset="">
-									<img src="/images/inicio2.png" alt="" width="100%" srcset="">
-								</div>
 								
-								<div>
-									<header class="major">
-										<h2>Administradores</h2>
-									</header>
-									<img src="/images/administrator.png" alt="" width="100%" srcset="">
+								<!-- Carrusel de imágenes -->
+								<div class="carousel-container">
+									<h3 class="carousel-title">Inicio de sesión</h3>
+									<div class="carousel">
+										<div class="carousel-slide active" data-title="Inicio de sesión">
+											<img src="/images/login.png" alt="Inicio de sesión">
+										</div>
+										<div class="carousel-slide" data-title="Panel principal">
+											<img src="/images/inicio.png" alt="Panel principal">
+										</div>
+										<div class="carousel-slide" data-title="Dashboard de estadísticas">
+											<img src="/images/inicio2.png" alt="Dashboard de estadísticas">
+										</div>
+										<div class="carousel-slide" data-title="Gestión de administradores">
+											<img src="/images/administrator.png" alt="Gestión de administradores">
+										</div>
+										<div class="carousel-slide" data-title="Registro de socios">
+											<img src="/images/user.png" alt="Registro de socios">
+										</div>
+										<div class="carousel-slide" data-title="Control de acceso - Esperando huella">
+											<img src="/images/finger1.png" alt="Control de acceso">
+										</div>
+										<div class="carousel-slide" data-title="Acceso autorizado">
+											<img src="/images/finger2.png" alt="Acceso autorizado">
+										</div>
+										<div class="carousel-slide" data-title="Membresía vencida">
+											<img src="/images/finger3.png" alt="Membresía vencida">
+										</div>
+										<div class="carousel-slide" data-title="Gestión de suscripciones">
+											<img src="/images/suscripciones.png" alt="Gestión de suscripciones">
+										</div>
+									</div>
+									<div class="carousel-controls">
+										<button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+										<button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+									</div>
 								</div>
-								<div>
-									<header class="major">
-										<h2>Usuarios</h2>
-									</header>
-									<img src="/images/user.png" alt="" width="100%" srcset="">
-								</div>
-								<div>
-									<header class="major">
-										<h2>En espera</h2>
-									</header>
-									<img src="/images/finger1.png" alt="" width="100%" srcset="">
-									<img src="/images/finger2.png" alt="" width="100%" srcset="">
-									<img src="/images/finger3.png" alt="" width="100%" srcset="">
-
-								</div>
-								<div>
-									<header class="major">
-										<h2>Suscripciones</h2>
-									</header>
-									<img src="/images/suscripciones.png" alt="" width="100%" srcset="">
-								</div>
-				
 								
 							</section>
 
-						<!-- Get Started -->
-						
+						<!-- Sección: Plan Gratuito (DESTACADA) -->
+							<section id="gratis" class="main special">
+								<header class="major">
+									<h2>Empieza gratis, sin compromiso</h2>
+									<p>Prueba todas las funcionalidades sin costo</p>
+								</header>
+								<div class="pricing-card free">
+									<div class="pricing-header">
+										<span class="pricing-badge">Gratis</span>
+										<h3>Plan Starter</h3>
+										<p class="pricing-desc">Ideal para clubes pequeños o para probar el sistema</p>
+									</div>
+									<div class="pricing-features">
+										<div class="pricing-feature">
+											<span class="icon solid fa-users"></span>
+											<span>Hasta 20 socios registrados</span>
+										</div>
+										<div class="pricing-feature">
+											<span class="icon solid fa-fingerprint"></span>
+											<span>Control de acceso completo</span>
+										</div>
+										<div class="pricing-feature">
+											<span class="icon solid fa-id-card"></span>
+											<span>Gestión de membresías</span>
+										</div>
+										<div class="pricing-feature">
+											<span class="icon brands fa-whatsapp"></span>
+											<span>Notificaciones por WhatsApp</span>
+										</div>
+										<div class="pricing-feature">
+											<span class="icon solid fa-chart-bar"></span>
+											<span>Reportes básicos</span>
+										</div>
+									</div>
+									<div class="pricing-footer">
+										<p class="pricing-note">Sin límite de tiempo. Sin tarjeta de crédito.</p>
+										<a class="btn-download primary large" href="/assets/ClubCheck.rar" download="ClubCheck.rar">
+											<span class="icon solid fa-download"></span> Descargar ahora
+										</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Sección: Planes de crecimiento -->
+							<section id="planes" class="main special">
+								<header class="major">
+									<h2>¿Tu club está creciendo?</h2>
+									<p>Tenemos planes que se adaptan a tus necesidades</p>
+								</header>
+								<div class="growth-content">
+									<p>Cuando tu club supere los 20 usuarios, puedes escalar fácilmente a un plan de pago 
+										que se ajuste al tamaño de tu negocio.</p>
+									<ul class="features compact">
+										<li>
+											<span class="icon solid major style2 fa-users"></span>
+											<h3>Más usuarios</h3>
+											<p>Registra todos los socios que necesites sin límites.</p>
+										</li>
+										<li>
+											<span class="icon solid major style4 fa-headset"></span>
+											<h3>Soporte prioritario</h3>
+											<p>Atención personalizada para resolver tus dudas rápidamente.</p>
+										</li>
+										<li>
+											<span class="icon solid major style5 fa-rocket"></span>
+											<h3>Funciones avanzadas</h3>
+											<p>Accede a módulos premium según las necesidades de tu club.</p>
+										</li>
+									</ul>
+									<p class="cta-text">¿Quieres conocer el plan ideal para tu club?</p>
+									<a class="btn-whatsapp large"  href="https://wa.me/526131210267?text=Hola,%20quiero%20conocer%20los%20planes%20de%20ClubCheck%20para%20mi%20club" target="_blank">
+										<span class="icon brands fa-whatsapp"></span> <span style="color: #000; ;"> Solicitar información de planes</span>
+									</a>
+								</div>
+							</section>
 
 					</div>
 
-				<!-- Footer -->
+				<!-- Footer / Contacto -->
 					<footer id="footer">
-						<section>
-							<h2>Contactanos</h2>
-							<p>Contactanos, con gusto resolveremos todas tus dudas</p>
+						<section id="contacto">
+							<h2>¿Tienes dudas? Estamos para ayudarte</h2>
+							<p>Escríbenos por WhatsApp y con gusto te asesoramos sin compromiso.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">Volver al inicio</a></li>
+								<a class="btn-whatsapp-text" href="https://wa.me/526131210267?text=Hola,%20tengo%20una%20pregunta%20sobre%20ClubCheck" target="_blank">
+									<span class="icon brands fa-whatsapp"></span> Enviar mensaje por WhatsApp
+								</a>
 							</ul>
 						</section>
 						<section>
-							<h2>Datos de contacto</h2>
+							<h2>Contacto directo</h2>
 							<dl class="alt">
-								
-								<dt>Teléfono</dt>
-								<dd>(+52) 613-121-0267</dd>
+								<dt>WhatsApp</dt>
+								<dd><a href="https://wa.me/526131210267">(+52) 613-121-0267</a></dd>
 								<dt>Email</dt>
-								<dd><a href="#">oswaldocuevasdev@gmail.com</a></dd>
+								<dd><a href="mailto:oswaldocuevasdev@gmail.com">oswaldocuevasdev@gmail.com</a></dd>
 							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="#">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; ClubCheck. Hecho con 💪 para clubes.</p>
 					</footer>
 
 			</div>
+
+		<!-- Botón flotante de WhatsApp -->
+		<a href="https://wa.me/526131210267?text=Hola,%20me%20interesa%20ClubCheck" class="whatsapp-float" target="_blank">
+			<span class="icon brands fa-whatsapp"></span>
+		</a>
+
+		<!-- Modal Lightbox para imágenes -->
+		<div id="image-modal" class="image-modal">
+			<span class="modal-close" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<img id="modal-image" src="" alt="">
+				<p id="modal-caption"></p>
+			</div>
+			<button class="modal-nav prev" onclick="modalNavigate(-1)">&#10094;</button>
+			<button class="modal-nav next" onclick="modalNavigate(1)">&#10095;</button>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

@@ -120,4 +120,201 @@
 			speed: 1000
 		});
 
+	// Carousel
+		initCarousel();
+
+	// Laptop Mockup Scroll Animation
+		initLaptopAnimation();
+
 })(jQuery);
+
+// Laptop Scroll Animation
+function initLaptopAnimation() {
+	const laptop = document.querySelector('.laptop-frame');
+	if (!laptop) return;
+	
+	const heroSection = document.querySelector('#header');
+	
+	window.addEventListener('scroll', () => {
+		const scrollY = window.scrollY;
+		const heroHeight = heroSection ? heroSection.offsetHeight : 600;
+		
+		// Calculate progress (0 to 1) based on scroll within hero
+		const progress = Math.min(scrollY / (heroHeight * 0.5), 1);
+		
+		// Interpolate rotation from 5deg to 0deg
+		const rotation = 5 * (1 - progress);
+		// Interpolate scale from 1 to 1.02
+		const scale = 1 + (0.02 * progress);
+		
+		laptop.style.transform = `rotateX(${rotation}deg) scale(${scale})`;
+	});
+}
+
+// Carousel Functions
+let currentSlide = 0;
+
+function initCarousel() {
+	const slides = document.querySelectorAll('.carousel-slide');
+	
+	if (!slides.length) return;
+	
+	// Auto-play (optional - uncomment to enable)
+	// setInterval(() => moveCarousel(1), 5000);
+	
+	// Keyboard navigation
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'ArrowLeft') moveCarousel(-1);
+		if (e.key === 'ArrowRight') moveCarousel(1);
+	});
+	
+	// Touch/swipe support
+	let touchStartX = 0;
+	let touchEndX = 0;
+	
+	const carousel = document.querySelector('.carousel');
+	if (carousel) {
+		carousel.addEventListener('touchstart', (e) => {
+			touchStartX = e.changedTouches[0].screenX;
+		});
+		
+		carousel.addEventListener('touchend', (e) => {
+			touchEndX = e.changedTouches[0].screenX;
+			handleSwipe();
+		});
+	}
+	
+	function handleSwipe() {
+		const swipeThreshold = 50;
+		if (touchEndX < touchStartX - swipeThreshold) {
+			moveCarousel(1);
+		}
+		if (touchEndX > touchStartX + swipeThreshold) {
+			moveCarousel(-1);
+		}
+	}
+}
+
+function moveCarousel(direction) {
+	const slides = document.querySelectorAll('.carousel-slide');
+	const titleElement = document.querySelector('.carousel-title');
+	
+	if (!slides.length) return;
+	
+	slides[currentSlide].classList.remove('active');
+	
+	currentSlide += direction;
+	
+	if (currentSlide >= slides.length) currentSlide = 0;
+	if (currentSlide < 0) currentSlide = slides.length - 1;
+	
+	slides[currentSlide].classList.add('active');
+	
+	// Update title
+	if (titleElement) {
+		titleElement.textContent = slides[currentSlide].getAttribute('data-title');
+	}
+}
+
+function goToSlide(index) {
+	const slides = document.querySelectorAll('.carousel-slide');
+	const titleElement = document.querySelector('.carousel-title');
+	
+	if (!slides.length) return;
+	
+	slides[currentSlide].classList.remove('active');
+	
+	currentSlide = index;
+	
+	slides[currentSlide].classList.add('active');
+	
+	// Update title
+	if (titleElement) {
+		titleElement.textContent = slides[currentSlide].getAttribute('data-title');
+	}
+}
+
+// Image Modal / Lightbox Functions
+let modalIndex = 0;
+
+function initImageModal() {
+	const slides = document.querySelectorAll('.carousel-slide');
+	
+	slides.forEach((slide, index) => {
+		slide.addEventListener('click', () => {
+			openModal(index);
+		});
+	});
+	
+	// Close modal with Escape key
+	document.addEventListener('keydown', (e) => {
+		const modal = document.getElementById('image-modal');
+		if (modal && modal.classList.contains('active')) {
+			if (e.key === 'Escape') closeModal();
+			if (e.key === 'ArrowLeft') modalNavigate(-1);
+			if (e.key === 'ArrowRight') modalNavigate(1);
+		}
+	});
+	
+	// Close modal when clicking outside image
+	const modal = document.getElementById('image-modal');
+	if (modal) {
+		modal.addEventListener('click', (e) => {
+			if (e.target === modal) {
+				closeModal();
+			}
+		});
+	}
+}
+
+function openModal(index) {
+	const modal = document.getElementById('image-modal');
+	const slides = document.querySelectorAll('.carousel-slide');
+	
+	if (!modal || !slides.length) return;
+	
+	modalIndex = index;
+	updateModalImage();
+	modal.classList.add('active');
+	document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+	const modal = document.getElementById('image-modal');
+	if (modal) {
+		modal.classList.remove('active');
+		document.body.style.overflow = '';
+	}
+}
+
+function modalNavigate(direction) {
+	const slides = document.querySelectorAll('.carousel-slide');
+	
+	modalIndex += direction;
+	
+	if (modalIndex >= slides.length) modalIndex = 0;
+	if (modalIndex < 0) modalIndex = slides.length - 1;
+	
+	updateModalImage();
+}
+
+function updateModalImage() {
+	const slides = document.querySelectorAll('.carousel-slide');
+	const modalImage = document.getElementById('modal-image');
+	const modalCaption = document.getElementById('modal-caption');
+	
+	if (!slides.length || !modalImage) return;
+	
+	const currentSlideEl = slides[modalIndex];
+	const img = currentSlideEl.querySelector('img');
+	
+	modalImage.src = img.src;
+	modalImage.alt = img.alt;
+	
+	if (modalCaption) {
+		modalCaption.textContent = currentSlideEl.getAttribute('data-title') || '';
+	}
+}
+
+// Initialize modal when DOM is ready
+document.addEventListener('DOMContentLoaded', initImageModal);
