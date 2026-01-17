@@ -4210,29 +4210,15 @@ input, select, textarea {
 	}
 }
 
-.hero-text h1 {
-	animation: slideDown 0.5s ease-out forwards;
-	opacity: 0;
-}
-
-.hero-subtitle {
-	animation: slideDown 0.5s ease-out 0.15s forwards;
-	opacity: 0;
-}
-
-.hero-highlight {
-	animation: slideDown 0.5s ease-out 0.3s forwards;
-	opacity: 0;
-}
-
-.hero-cta {
-	animation: slideUp 0.5s ease-out 0.45s forwards;
-	opacity: 0;
-}
-
-.hero-mockup {
-	animation: slideDown 0.6s ease-out 0.2s forwards;
-	opacity: 0;
+@keyframes slideInRight {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 /* Hero Text Layout */
@@ -4298,7 +4284,7 @@ input, select, textarea {
 	max-width: 600px;
 	z-index: 2;
 	perspective: 1000px;
-	animation: slideDown 0.6s ease-out 0.1s forwards;
+	animation: slideInRight 0.7s ease-out 0.6s forwards;
 	opacity: 0;
 }
 
@@ -4306,8 +4292,6 @@ input, select, textarea {
 	max-width: 100%;
 	margin: 0 auto;
 	transform: rotateX(5deg);
-	transition: transform 0.1s ease-out;
-	will-change: transform;
 }
 
 .laptop-screen {

@@ -134,8 +134,17 @@ function initLaptopAnimation() {
 	if (!laptop) return;
 	
 	const heroSection = document.querySelector('#header');
+	let animationComplete = false;
+	
+	// Wait for CSS entrance animation to complete (0.7s delay + 0.7s duration = 1.4s)
+	setTimeout(() => {
+		animationComplete = true;
+	}, 1500);
 	
 	window.addEventListener('scroll', () => {
+		// Don't apply scroll transforms until entrance animation is complete
+		if (!animationComplete) return;
+		
 		const scrollY = window.scrollY;
 		const heroHeight = heroSection ? heroSection.offsetHeight : 600;
 		
