@@ -1,0 +1,7 @@
+
+
+# Ignore all files in the "logs" and "ssl" directories, as well as any files with the ".log" extension.
+
+logs/
+ssl/
+*.log
