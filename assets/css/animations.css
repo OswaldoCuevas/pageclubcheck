@@ -285,3 +285,35 @@ html {
 		scroll-behavior: auto;
 	}
 }
+
+/* ========================================
+   RESPONSIVE - MOBILE DEVICES
+   Hide download buttons on mobile/tablet
+   ======================================== */
+
+/* Hide download buttons on mobile and tablets (max 980px) */
+@media screen and (max-width: 980px) {
+	.btn-download {
+		display: none !important;
+	}
+	
+	/* Adjust hero CTA spacing when download button is hidden */
+	.hero-cta {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 1em;
+	}
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 480px) {
+	.hero-cta {
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.hero-cta .btn-whatsapp {
+		width: 100%;
+		text-align: center;
+	}
+}
