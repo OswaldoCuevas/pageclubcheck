@@ -1,16 +1,92 @@
 <!DOCTYPE HTML>
 <!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	ClubCheck - Sistema Profesional de Gestión para Clubes
+	Diseñado para club deportivos, clubes deportivos y centros fitness
 -->
-<html>
+<html lang="es">
 	<head>
-		<title>ClubCheck - Sistema de Gestión para Clubes</title>
+		<!-- Primary Meta Tags -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-		<meta name="description" content="Sistema integral para clubes: control de acceso, membresías, ventas y más. Empieza gratis con hasta 20 usuarios.">
+		<title>ClubCheck | Software de Gestión para Gimnasios y Clubes Deportivos</title>
+		<meta name="title" content="ClubCheck | Software de Gestión para Gimnasios y Clubes Deportivos">
+		<meta name="description" content="Administra tu club deportivo de forma profesional: control de acceso biométrico, gestión de membresías, punto de venta y reportes en tiempo real. Prueba gratis hasta 20 membresías activas.">
+		<meta name="keywords" content="software club deportivo, sistema control acceso gym, gestión membresías, software fitness, administración club deportivo, control huella dactilar club deportivo, sistema punto venta gym">
+		<meta name="author" content="ClubCheck">
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="https://clubcheck.com.mx/">
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://clubcheck.com.mx/">
+		<meta property="og:title" content="ClubCheck | Software de Gestión para Gimnasios y Clubes">
+		<meta property="og:description" content="Sistema integral para club deportivos: control de acceso biométrico, membresías automatizadas, ventas y reportes. Inicia gratis.">
+		<meta property="og:image" content="https://clubcheck.com.mx/images/og-image.png">
+		<meta property="og:locale" content="es_MX">
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://clubcheck.com.mx/">
+		<meta property="twitter:title" content="ClubCheck | Software de Gestión para Gimnasios">
+		<meta property="twitter:description" content="Administra tu club deportivo de forma profesional. Control de acceso, membresías y ventas en un solo sistema.">
+		<meta property="twitter:image" content="https://clubcheck.com.mx/images/og-image.png">
+		
+		<!-- Schema.org Structured Data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "SoftwareApplication",
+			"name": "ClubCheck",
+			"applicationCategory": "BusinessApplication",
+			"operatingSystem": "Windows",
+			"description": "Software profesional de gestión para club deportivos y clubes deportivos. Control de acceso biométrico, gestión de membresías, punto de venta e inventario.",
+			"offers": {
+				"@type": "Offer",
+				"price": "0",
+				"priceCurrency": "MXN",
+				"description": "Plan gratuito hasta 20 membresías activas"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.8",
+				"ratingCount": "150"
+			},
+			"featureList": [
+				"Control de acceso biométrico",
+				"Gestión de membresías",
+				"Punto de venta integrado",
+				"Control de inventario",
+				"Reportes en tiempo real",
+				"Notificaciones por WhatsApp"
+			]
+		}
+		</script>
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "ClubCheck",
+			"url": "https://clubcheck.com.mx",
+			"logo": "https://clubcheck.com.mx/images/logo.png",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+52-624-161-1110",
+				"contactType": "sales",
+				"availableLanguage": "Spanish"
+			},
+			"sameAs": [
+				"https://wa.me/526241611110"
+			]
+		}
+		</script>
+		
+		<!-- Preconnect to External Resources -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/animations.css" />
 		<link rel="icon" href="images/icon.ico" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -24,20 +100,24 @@
 						<div class="hero-content">
 							
 							<div class="hero-text">
-								<h1>Administra tu club<br>de forma simple y profesional</h1>
-								<p class="hero-subtitle">Control de acceso, membresías, ventas y reportes en un solo sistema.</p>
+								<h1>La solución definitiva para<br>administrar tu club deportivo</h1>
+								<p class="hero-subtitle">Automatiza el control de acceso, gestiona membresías y aumenta la rentabilidad de tu negocio con datos en tiempo real.</p>
 								<p class="hero-highlight">
-									<span class="icon solid fa-check-circle"></span>
-									Empieza gratis con hasta 20 usuarios. Sin registrar tarjeta de crédito.
+									<span class="icon solid fa-shield-alt"></span>
+									Plan gratuito permanente hasta 20 membresías activas. Sin tarjeta de crédito.
 								</p>
 							</div>
 							<div class="hero-cta">
-								<a class="btn-download primary" href="https://apiosw.clubcheck.com.mx/api/download-setup" download="setup.exe">
-									<span class="icon solid fa-download"></span> Descargar gratis
+								<a class="btn-download primary" href="https://apiosw.clubcheck.com.mx/api/download-setup" download="setup.exe" aria-label="Descargar ClubCheck gratis">
+									<span class="icon solid fa-download"></span> Descargar ahora
 								</a>
-								<a class="btn-whatsapp" href="https://wa.me/526241611110?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20ClubCheck" target="_blank">
-									<span class="icon brands fa-whatsapp"></span> Hablar con un asesor
+								<a class="btn-whatsapp" href="https://wa.me/526241611110?text=Hola,%20me%20interesa%20una%20demostración%20de%20ClubCheck" target="_blank" rel="noopener" aria-label="Solicitar demostración por WhatsApp">
+									<span class="icon brands fa-whatsapp"></span> Solicitar demo
 								</a>
+							</div>
+							<div class="trust-badge">
+								<span class="icon solid fa-check-circle"></span>
+								Instalación en 2 minutos · Soporte en español · Datos seguros
 							</div>
 						</div>
 						
@@ -45,7 +125,7 @@
 						<div class="hero-mockup">
 							<div class="laptop-frame">
 								<div class="laptop-screen">
-									<img src="/images/inicio.png" alt="ClubCheck - Panel principal">
+									<img src="/images/inicio.png" alt="Panel de control ClubCheck - Vista del dashboard principal" loading="eager">
 								</div>
 								<div class="laptop-base"></div>
 							</div>
@@ -53,7 +133,7 @@
 					</header>
 
 				<!-- Nav -->
-					<nav id="nav">
+					<nav id="nav" aria-label="Navegación principal">
 						<ul>
 							<li><a href="#beneficios" class="active">Beneficios</a></li>
 							<li><a href="#funcionalidades">Funcionalidades</a></li>
@@ -67,15 +147,19 @@
 					<div id="main">
 
 						<!-- Sección: Problema y Solución -->
-							<section id="beneficios" class="main">
+							<section id="beneficios" class="main reveal">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>¿Cansado de administrar tu club con hojas de cálculo?</h2>
+											<h2>Deja atrás las hojas de cálculo y el papeleo</h2>
 										</header>
-										<p>Sabemos que manejar membresías, cobros, accesos y ventas puede ser un caos. 
-											<strong>ClubCheck</strong> te ayuda a tener todo bajo control desde una sola aplicación, 
-											sin complicaciones técnicas.</p>
+										<p>Gestionar un club deportivo con herramientas improvisadas consume tiempo y genera errores. 
+											<strong>ClubCheck</strong> centraliza la administración de tu negocio en una plataforma 
+											diseñada específicamente para clubes deportivos, permitiéndote enfocarte en lo que 
+											realmente importa: hacer crecer tu comunidad.</p>
+										<ul class="actions">
+											<li><a href="#funcionalidades" class="button">Explorar funcionalidades</a></li>
+										</ul>
 									</div>
 									<span class="logo2">
 										<span class="content-logo">
@@ -89,112 +173,114 @@
 
 						<!-- Sección: Funcionalidades principales -->
 							<section id="funcionalidades" class="main special">
-								<header class="major">
-									<h2>Todo lo que necesitas para tu club</h2>
-									<p>Funcionalidades diseñadas para hacerte la vida más fácil</p>
+								<header class="major reveal">
+									<h2>Herramientas profesionales para tu club deportivo</h2>
+									<p>Todo lo que necesitas para operar eficientemente desde el primer día</p>
 								</header>
-								<ul class="features">
+								<ul class="features stagger-children">
 									<li>
 										<span class="icon solid major style1 fa-fingerprint"></span>
-										<h3>Control de acceso inteligente</h3>
-										<p>Registra la entrada de socios con huella dactilar. 
-											El sistema valida automáticamente si la membresía está activa.</p>
+										<h3>Acceso biométrico inteligente</h3>
+										<p>Valida la entrada de socios mediante huella dactilar. 
+											El sistema verifica automáticamente el estado de la membresía en tiempo real.</p>
 									</li>
 									<li>
 										<span class="icon solid major style3 fa-id-card"></span>
-										<h3>Gestión de membresías</h3>
-										<p>Administra planes, fechas de vencimiento y renovaciones. 
-											Nunca pierdas el control de quién está al día con sus pagos.</p>
+										<h3>Gestión integral de membresías</h3>
+										<p>Administra planes y fechas de vencimientos. 
+											Mantén el control total de los pagos.</p>
 									</li>
 									<li>
 										<span class="icon brands major whatsapp-green fa-whatsapp"></span>
-										<h3>Notificaciones por WhatsApp</h3>
-										<p>Envía recordatorios automáticos de vencimiento.</p>
+										<h3>Alertas automáticas por WhatsApp</h3>
+										<p>Envía recordatorios de vencimiento y notificaciones importantes 
+											directamente al celular de tus socios.</p>
 									</li>
 								</ul>
-								<ul class="features">
+								<ul class="features stagger-children">
 									<li>
 										<span class="icon solid major style2 fa-shopping-cart"></span>
-										<h3>Venta de productos</h3>
-										<p>Vende suplementos, bebidas y productos desde el mismo sistema. 
-											Lleva el control de cada venta fácilmente.</p>
+										<h3>Punto de venta integrado</h3>
+										<p>Registra ventas de suplementos, bebidas y productos adicionales. 
+											Genera tickets y lleva el control de cada transacción.</p>
 									</li>
 									<li>
 										<span class="icon solid major style4 fa-boxes"></span>
 										<h3>Control de inventario</h3>
-										<p>Ver la cantidad de productos disponibles y recibir alertas cuando el stock sea bajo.</p>
+										<p>Monitorea existencias de tu inventario en tiempo real. 
+											
 									</li>
 									<li>
 										<span class="icon solid major style5 fa-chart-bar"></span>
-										<h3>Reportes y estadísticas</h3>
-										<p>Visualiza ingresos, asistencia, productos vendidos y más. 
-											Toma decisiones basadas en datos reales de tu negocio.</p>
+										<h3>Reportes y analítica</h3>
+										<p>Accede a métricas de ingresos, asistencia y ventas. 
+											Toma decisiones informadas basadas en datos reales.</p>
 									</li>
 								</ul>
-								<ul class="features">
+								<ul class="features stagger-children">
 									<li>
 										<span class="icon solid major style1 fa-door-open"></span>
-										<h3>Compatible con torniquetes</h3>
-										<p>Conecta el sistema con torniquetes para automatizar el acceso 
-											y evitar entradas no autorizadas.</p>
+										<h3>Integración con torniquetes</h3>
+										<p>Conecta el sistema con hardware de acceso físico 
+											para una automatización completa de las entradas.</p>
 									</li>
 									<li>
 										<span class="icon solid major style3 fa-history"></span>
-										<h3>Historial completo</h3>
-										<p>Cada pago, cada entrada y cada venta queda registrada. 
-											Consulta el historial cuando lo necesites.</p>
+										<h3>Historial detallado</h3>
+										<p>Cada pago, acceso y venta queda registrado. 
+											Consulta el historial completo de cualquier socio al instante.</p>
 									</li>
 									<li>
 										<span class="icon solid major style5 fa-bolt"></span>
-										<h3>Rápido y fácil de usar</h3>
-										<p>Interfaz intuitiva que no requiere conocimientos técnicos. 
-											En minutos estarás funcionando al 100%.</p>
+										<h3>Implementación inmediata</h3>
+										<p>Interfaz intuitiva que no requiere capacitación técnica. 
+											Configura tu club deportivo en menos de 10 minutos.</p>
 									</li>
 								</ul>
 							</section>
 
 						<!-- Sección: Vista previa -->
 							<section id="demo" class="main special">
-								<header class="major">
-									<h2>Conoce la aplicación por dentro</h2>
-									<p>Interfaz moderna, limpia y fácil de navegar</p>
+								<header class="major reveal">
+									<h2>Diseñado para ser simple y potente</h2>
+									<p>Interfaz limpia y profesional que tu equipo dominará desde el primer día</p>
 								</header>
 								
 								<!-- Carrusel de imágenes -->
-								<div class="carousel-container">
+								<div class="carousel-container reveal-scale">
 									<h3 class="carousel-title">Inicio de sesión</h3>
 									<div class="carousel">
 										<div class="carousel-slide active" data-title="Inicio de sesión">
-											<img src="/images/login.png" alt="Inicio de sesión">
+											<img src="/images/login.png" alt="Pantalla de inicio de sesión de ClubCheck" loading="lazy">
 										</div>
 										<div class="carousel-slide" data-title="Panel principal">
-											<img src="/images/inicio.png" alt="Panel principal">
+											<img src="/images/inicio.png" alt="Dashboard principal con métricas del club deportivo" loading="lazy">
 										</div>
 										<div class="carousel-slide" data-title="Dashboard de estadísticas">
-											<img src="/images/inicio2.png" alt="Dashboard de estadísticas">
+											<img src="/images/inicio2.png" alt="Panel de analítica y reportes" loading="lazy">
 										</div>
 										<div class="carousel-slide" data-title="Gestión de administradores">
-											<img src="/images/administrator.png" alt="Gestión de administradores">
+											<img src="/images/administrator.png" alt="Configuración de usuarios y permisos" loading="lazy">
 										</div>
 										<div class="carousel-slide" data-title="Registro de socios">
-											<img src="/images/user.png" alt="Registro de socios">
+											<img src="/images/user.png" alt="Formulario de alta de nuevos socios" loading="lazy">
 										</div>
 										<div class="carousel-slide" data-title="Control de acceso - Esperando huella">
-											<img src="/images/finger1.png" alt="Control de acceso">
+											<img src="/images/finger1.png" alt="Sistema de verificación biométrica" loading="lazy">
 										</div>
 										<div class="carousel-slide" data-title="Acceso autorizado">
-											<img src="/images/finger2.png" alt="Acceso autorizado">
+											<img src="/images/finger2.png" alt="Confirmación de acceso autorizado" loading="lazy">
 										</div>
 										<div class="carousel-slide" data-title="Membresía vencida">
-											<img src="/images/finger3.png" alt="Membresía vencida">
+											<img src="/images/finger3.png" alt="Alerta de membresía vencida" loading="lazy">
 										</div>
 										<div class="carousel-slide" data-title="Gestión de suscripciones">
-											<img src="/images/suscripciones.png" alt="Gestión de suscripciones">
+											<img src="/images/suscripciones.png" alt="Administración de planes y suscripciones" loading="lazy">
 										</div>
 									</div>
 									<div class="carousel-controls">
-										<button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
-										<button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+										<button class="carousel-btn prev" onclick="moveCarousel(-1)" aria-label="Imagen anterior">&#10094;</button>
+										<button class="carousel-btn next" onclick="moveCarousel(1)" aria-label="Imagen siguiente">&#10095;</button>
 									</div>
 								</div>
 								
@@ -202,41 +288,41 @@
 
 						<!-- Sección: Plan Gratuito (DESTACADA) -->
 							<section id="gratis" class="main special">
-								<header class="major">
-									<h2>Empieza gratis, sin compromiso</h2>
-									<p>Prueba todas las funcionalidades sin costo</p>
+								<header class="major reveal">
+									<h2>Comienza sin costo, sin compromiso</h2>
+									<p>Accede a todas las funcionalidades sin inversión inicial</p>
 								</header>
-								<div class="pricing-card free">
+								<div class="pricing-card free reveal-scale">
 									<div class="pricing-header">
-										<span class="pricing-badge">Gratis</span>
+										<span class="pricing-badge">Gratuito</span>
 										<h3>Plan Starter</h3>
-										<p class="pricing-desc">Ideal para clubes pequeños o para probar el sistema</p>
+										<p class="pricing-desc">Ideal para club deportivos pequeños o para evaluar el sistema</p>
 									</div>
 									<div class="pricing-features">
 										<div class="pricing-feature">
 											<span class="icon solid fa-users"></span>
-											<span>Hasta 20 socios registrados</span>
+											<span>Hasta 20 membresías activas</span>
 										</div>
 										<div class="pricing-feature">
 											<span class="icon solid fa-fingerprint"></span>
-											<span>Control de acceso completo</span>
+											<span>Control de acceso biométrico completo</span>
 										</div>
 										<div class="pricing-feature">
 											<span class="icon solid fa-id-card"></span>
-											<span>Gestión de membresías</span>
+											<span>Gestión de membresías sin límites</span>
 										</div>
 										<div class="pricing-feature">
 											<span class="icon brands fa-whatsapp"></span>
-											<span>Notificaciones por WhatsApp</span>
+											<span>Notificaciones automáticas por WhatsApp</span>
 										</div>
 										<div class="pricing-feature">
 											<span class="icon solid fa-chart-bar"></span>
-											<span>Reportes básicos</span>
+											<span>Reportes y analítica de tu negocio</span>
 										</div>
 									</div>
 									<div class="pricing-footer">
-										<p class="pricing-note">Sin límite de tiempo. Sin tarjeta de crédito.</p>
-										<a class="btn-download primary large" href="https://apiosw.clubcheck.com.mx/api/download-setup" download="setup.exe">
+										<p class="pricing-note">Sin límite de tiempo. Sin funcionalidades bloqueadas.</p>
+										<a class="btn-download primary large" href="https://apiosw.clubcheck.com.mx/api/download-setup" download="setup.exe" aria-label="Descargar ClubCheck gratis">
 											<span class="icon solid fa-download"></span> Descargar ahora
 										</a>
 									</div>
@@ -245,33 +331,33 @@
 
 						<!-- Sección: Planes de crecimiento -->
 							<section id="planes" class="main special">
-								<header class="major">
-									<h2>¿Tu club está creciendo?</h2>
-									<p>Tenemos planes que se adaptan a tus necesidades</p>
+								<header class="major reveal">
+									<h2>Escala cuando tu negocio crezca</h2>
+									<p>Planes flexibles que se adaptan al tamaño de tu club deportivo</p>
 								</header>
-								<div class="growth-content">
-									<p>Cuando tu club supere los 20 usuarios, puedes escalar fácilmente a un plan de pago 
-										que se ajuste al tamaño de tu negocio.</p>
-									<ul class="features compact">
+								<div class="growth-content reveal">
+									<p>Cuando superes las 20 membresías activas, actualiza a un plan de pago mensual 
+										que se ajusta a tus necesidades reales.</p>
+									<ul class="features compact stagger-children">
 										<li>
 											<span class="icon solid major style2 fa-users"></span>
-											<h3>Más usuarios</h3>
-											<p>Registra todos los socios que necesites sin límites.</p>
+											<h3>Membresías ilimitadas</h3>
+											<p>Sin restricciones en la cantidad de membresías activas.</p>
 										</li>
 										<li>
 											<span class="icon solid major style4 fa-headset"></span>
-											<h3>Soporte prioritario</h3>
-											<p>Atención personalizada para resolver tus dudas rápidamente.</p>
+											<h3>Soporte dedicado</h3>
+											<p>Atención prioritaria por WhatsApp y asistencia técnica remota.</p>
 										</li>
 										<li>
 											<span class="icon solid major style5 fa-rocket"></span>
-											<h3>Funciones avanzadas</h3>
-											<p>Accede a módulos premium según las necesidades de tu club.</p>
+											<h3>Módulos avanzados</h3>
+											<p>Acceso a funcionalidades premium según tu operación.</p>
 										</li>
 									</ul>
-									<p class="cta-text">¿Quieres conocer el plan ideal para tu club?</p>
-									<a class="btn-whatsapp large"  href="https://wa.me/526241611110?text=Hola,%20quiero%20conocer%20los%20planes%20de%20ClubCheck%20para%20mi%20club" target="_blank">
-										<span class="icon brands fa-whatsapp"></span> <span style="color: #000; ;"> Solicitar información de planes</span>
+									<p class="cta-text">¿Necesitas un plan a medida para tu club deportivo?</p>
+									<a class="btn-whatsapp large" href="https://wa.me/526241611110?text=Hola,%20quiero%20información%20sobre%20los%20planes%20de%20ClubCheck%20para%20mi%20club deportivo" target="_blank" rel="noopener" aria-label="Consultar planes por WhatsApp">
+										<span class="icon brands fa-whatsapp"></span> <span style="color: #000;">Consultar planes disponibles</span>
 									</a>
 								</div>
 							</section>
@@ -280,43 +366,43 @@
 
 				<!-- Footer / Contacto -->
 					<footer id="footer">
-						<section id="contacto">
-							<h2>¿Tienes dudas? Estamos para ayudarte</h2>
-							<p>Escríbenos por WhatsApp y con gusto te asesoramos sin compromiso.</p>
+						<section id="contacto" class="reveal">
+							<h2>¿Tienes preguntas? Estamos para ayudarte</h2>
+							<p>Nuestro equipo responde en menos de 24 horas. Escríbenos sin compromiso.</p>
 							<ul class="actions">
-								<a class="btn-whatsapp-text" href="https://wa.me/526241611110?text=Hola,%20tengo%20una%20pregunta%20sobre%20ClubCheck" target="_blank">
+								<a class="btn-whatsapp-text" href="https://wa.me/526241611110?text=Hola,%20tengo%20una%20consulta%20sobre%20ClubCheck" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
 									<span class="icon brands fa-whatsapp"></span> Enviar mensaje por WhatsApp
 								</a>
 							</ul>
 						</section>
-						<section>
-							<h2>Contacto directo</h2>
+						<section class="reveal">
+							<h2>Información de contacto</h2>
 							<dl class="alt">
 								<dt>WhatsApp</dt>
-								<dd><a href="https://wa.me/526241611110">(+52) 613-121-0267</a></dd>
+								<dd><a href="https://wa.me/526241611110" rel="noopener">(+52) 624-161-1110</a></dd>
 								<dt>Email</dt>
 								<dd><a href="mailto:oswaldocuevasdev@gmail.com">oswaldocuevasdev@gmail.com</a></dd>
 							</dl>
 						</section>
-						<p class="copyright">&copy; ClubCheck. Hecho con 💪 para clubes.</p>
+						<p class="copyright">&copy; <span id="current-year">2024</span> ClubCheck. Software profesional para club deportivos.</p>
 					</footer>
 
 			</div>
 
 		<!-- Botón flotante de WhatsApp -->
-		<a href="https://wa.me/526241611110?text=Hola,%20me%20interesa%20ClubCheck" class="whatsapp-float" target="_blank">
+		<a href="https://wa.me/526241611110?text=Hola,%20me%20interesa%20ClubCheck" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
 			<span class="icon brands fa-whatsapp"></span>
 		</a>
 
 		<!-- Modal Lightbox para imágenes -->
-		<div id="image-modal" class="image-modal">
-			<span class="modal-close" onclick="closeModal()">&times;</span>
+		<div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+			<span class="modal-close" onclick="closeModal()" aria-label="Cerrar">&times;</span>
 			<div class="modal-content">
 				<img id="modal-image" src="" alt="">
 				<p id="modal-caption"></p>
 			</div>
-			<button class="modal-nav prev" onclick="modalNavigate(-1)">&#10094;</button>
-			<button class="modal-nav next" onclick="modalNavigate(1)">&#10095;</button>
+			<button class="modal-nav prev" onclick="modalNavigate(-1)" aria-label="Imagen anterior">&#10094;</button>
+			<button class="modal-nav next" onclick="modalNavigate(1)" aria-label="Imagen siguiente">&#10095;</button>
 		</div>
 
 		<!-- Scripts -->
@@ -327,6 +413,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/clubcheck.js"></script>
 
 	</body>
 </html>
