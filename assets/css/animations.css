@@ -293,9 +293,7 @@ html {
 
 /* Hide download buttons on mobile and tablets (max 980px) */
 @media screen and (max-width: 980px) {
-	.btn-download {
-		display: none !important;
-	}
+	
 	
 	/* Adjust hero CTA spacing when download button is hidden */
 	.hero-cta {

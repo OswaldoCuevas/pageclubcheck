@@ -2966,6 +2966,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
+		gap: 20px;
 		margin: 0 0 2em 0;
 	}
 
@@ -3072,7 +3073,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				font-size: 3.25em;
+				font-size: 2.em;
 			}
 
 			#header.alt > *:not(.hero-mockup) {
@@ -3849,7 +3850,7 @@ input, select, textarea {
 		
 		.btn-download{
 			background-color: transparent;
-			color: #5f4d93;
+			color: #6d5aa8;
 			border: none;
 			border: 2px solid #5f4d93;
 			padding: 15px 20px;
@@ -4349,7 +4350,7 @@ input, select, textarea {
 }
 
 .btn-download.primary {
-	background: rgba(95, 77, 147, 0.3);
+	background: rgba(94, 77, 147, 0.829);
 	color: #ffffff;
 	border: 2px solid rgba(95, 77, 147, 0.8);
 	padding: 0.9em 1.8em;
