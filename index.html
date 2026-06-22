@@ -1,0 +1,613 @@
+@ -1,612 +0,0 @@
+<!DOCTYPE HTML>
+<!--
+	ClubCheck - Sistema Profesional de Gestión para Clubes
+	Diseñado para gimnasios, clubes deportivos y centros fitness
+-->
+<html lang="es-MX">
+	<head>
+		<!-- Primary Meta Tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+		<title>ClubCheck | Software para Gimnasios en México - Control de Acceso y Membresías</title>
+		<meta name="title" content="ClubCheck | Software para Gimnasios en México - Control de Acceso y Membresías">
+		<meta name="description" content="Software #1 para gimnasios en México. Sistema de control de acceso con huella digital, gestión de membresías, punto de venta, inventario y reportes. Plan GRATIS hasta 20 socios. Descarga inmediata.">
+		<meta name="keywords" content="software para gimnasio, sistema para gimnasio, control de acceso gimnasio, software gym México, administrar gimnasio, membresías gimnasio, punto de venta gym, control huella digital gimnasio, software fitness, sistema club deportivo, administración gimnasio, cobro membresías, torniquete gimnasio, lector huella gym, software crossfit, sistema box crossfit, gestión centro deportivo, ERP gimnasio, CRM gym, software gratis gimnasio, sistema gratuito gym, control socios, registro miembros gimnasio, facturación gimnasio, reportes gimnasio, estadísticas gym, app gimnasio, programa para gym, software básico gimnasio México, descargar software gimnasio">
+		<meta name="author" content="ClubCheck - Software para Gimnasios">
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+		<meta name="googlebot" content="index, follow">
+		<meta name="bingbot" content="index, follow">
+		<link rel="canonical" href="https://clubcheck.com.mx/">
+		
+		<!-- Geo Tags for Local SEO -->
+		<meta name="geo.region" content="MX">
+		<meta name="geo.placename" content="México">
+		<meta name="language" content="Spanish">
+		<meta name="revisit-after" content="7 days">
+		<meta name="rating" content="general">
+		<meta name="distribution" content="global">
+		
+		<!-- Additional SEO Meta Tags -->
+		<meta name="subject" content="Software de gestión para gimnasios y clubes deportivos">
+		<meta name="topic" content="Software Gimnasio, Control Acceso, Membresías">
+		<meta name="summary" content="ClubCheck es el software más completo para administrar tu gimnasio. Control de acceso biométrico, membresías, ventas y reportes en un solo sistema.">
+		<meta name="classification" content="Business Software, Fitness Management">
+		<meta name="designer" content="ClubCheck">
+		<meta name="copyright" content="ClubCheck 2024">
+		<meta name="reply-to" content="oswaldocuevasdev@gmail.com">
+		<meta name="owner" content="ClubCheck">
+		<meta name="category" content="Software, Fitness, Gimnasio, Gestión Empresarial">
+		<meta name="coverage" content="México, Latinoamérica">
+		<meta name="target" content="Dueños de gimnasios, Administradores de clubes deportivos, Entrenadores, Centros fitness">
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://clubcheck.com.mx/">
+		<meta property="og:title" content="ClubCheck | Software #1 para Gimnasios en México">
+		<meta property="og:description" content="Administra tu gimnasio como profesional. Control de acceso con huella, membresías automáticas, punto de venta y reportes. Plan GRATIS disponible.">
+		<meta property="og:image" content="https://clubcheck.com.mx/images/og-image.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:image:alt" content="ClubCheck - Software para Gimnasios">
+		<meta property="og:locale" content="es_MX">
+		<meta property="og:site_name" content="ClubCheck">
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="https://clubcheck.com.mx/">
+		<meta name="twitter:title" content="ClubCheck | Software para Gimnasios - Gratis hasta 20 socios">
+		<meta name="twitter:description" content="El sistema más completo para tu gimnasio. Control de acceso biométrico, membresías y ventas. Descarga gratis.">
+		<meta name="twitter:image" content="https://clubcheck.com.mx/images/og-image.png">
+		<meta name="twitter:image:alt" content="ClubCheck Dashboard - Software para Gimnasios">
+		<meta name="twitter:creator" content="@clubcheck">
+		
+		<!-- Schema.org Structured Data - Software Application -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "SoftwareApplication",
+			"name": "ClubCheck",
+			"alternateName": ["ClubCheck Software", "ClubCheck Gimnasios", "ClubCheck Gym"],
+			"applicationCategory": "BusinessApplication",
+			"applicationSubCategory": "Fitness Management Software",
+			"operatingSystem": "Windows 10, Windows 11",
+			"description": "Software profesional de gestión para gimnasios, clubes deportivos y centros fitness en México. Incluye control de acceso biométrico con huella digital, gestión de membresías, punto de venta, control de inventario, reportes en tiempo real y notificaciones por WhatsApp.",
+			"url": "https://clubcheck.com.mx",
+			"downloadUrl": "https://apiosw.clubcheck.com.mx/api/download-setup",
+			"softwareVersion": "2.0",
+			"datePublished": "2023-01-01",
+			"releaseNotes": "Control de acceso biométrico mejorado, integración WhatsApp, reportes avanzados",
+			"screenshot": [
+				"https://clubcheck.com.mx/images/inicio.png",
+				"https://clubcheck.com.mx/images/login.png",
+				"https://clubcheck.com.mx/images/user.png"
+			],
+			"offers": [
+				{
+					"@type": "Offer",
+					"name": "Plan Gratuito",
+					"price": "0",
+					"priceCurrency": "MXN",
+					"description": "Plan gratuito permanente hasta 20 socios activos. Sin tarjeta de crédito requerida.",
+					"availability": "https://schema.org/InStock",
+					"validFrom": "2023-01-01"
+				},
+				{
+					"@type": "Offer",
+					"name": "Plan Premium",
+					"priceSpecification": {
+						"@type": "PriceSpecification",
+						"priceCurrency": "MXN",
+						"description": "Planes desde $299 MXN/mes para gimnasios con más de 20 socios"
+					}
+				}
+			],
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.9",
+				"bestRating": "5",
+				"worstRating": "1",
+				"ratingCount": "247",
+				"reviewCount": "183"
+			},
+			"featureList": [
+				"Control de acceso biométrico con huella digital",
+				"Gestión completa de membresías y suscripciones",
+				"Punto de venta integrado (POS)",
+				"Control de inventario con alertas de stock",
+				"Reportes y analítica en tiempo real",
+				"Notificaciones automáticas por WhatsApp",
+				"Integración con torniquetes y lectores de huella",
+				"Historial detallado de pagos y accesos",
+				"Multi-usuario con permisos personalizados",
+				"Respaldo automático de datos"
+			],
+			"sameAs": [
+				"https://wa.me/526241611110"
+			]
+		}
+		</script>
+		
+		<!-- Schema.org - Organization -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "ClubCheck",
+			"legalName": "ClubCheck Software",
+			"url": "https://clubcheck.com.mx",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://clubcheck.com.mx/images/logo.png",
+				"width": "200",
+				"height": "60"
+			},
+			"description": "Desarrollamos software especializado para la gestión de gimnasios y clubes deportivos en México y Latinoamérica.",
+			"foundingDate": "2023",
+			"areaServed": {
+				"@type": "Country",
+				"name": "México"
+			},
+			"contactPoint": [
+				{
+					"@type": "ContactPoint",
+					"telephone": "+52-624-161-1110",
+					"contactType": "sales",
+					"availableLanguage": "Spanish",
+					"areaServed": "MX"
+				},
+				{
+					"@type": "ContactPoint",
+					"telephone": "+52-624-161-1110",
+					"contactType": "customer support",
+					"availableLanguage": "Spanish",
+					"contactOption": "TollFree"
+				}
+			],
+			"sameAs": [
+				"https://wa.me/526241611110"
+			]
+		}
+		</script>
+		
+		<!-- Schema.org - WebPage -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "ClubCheck - Software para Gimnasios",
+			"description": "Descarga el software más completo para administrar tu gimnasio. Control de acceso biométrico, membresías y punto de venta.",
+			"url": "https://clubcheck.com.mx",
+			"mainEntity": {
+				"@type": "SoftwareApplication",
+				"name": "ClubCheck"
+			},
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Inicio",
+						"item": "https://clubcheck.com.mx"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Funcionalidades",
+						"item": "https://clubcheck.com.mx/#funcionalidades"
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"name": "Plan Gratuito",
+						"item": "https://clubcheck.com.mx/#gratis"
+					}
+				]
+			},
+			"speakable": {
+				"@type": "SpeakableSpecification",
+				"cssSelector": ["h1", ".hero-subtitle", "#beneficios h2"]
+			}
+		}
+		</script>
+		
+		<!-- Schema.org - FAQPage (Mejora SEO con preguntas frecuentes) -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "¿ClubCheck es gratis?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Sí, ClubCheck ofrece un plan gratuito permanente para gimnasios con hasta 20 socios activos. Incluye todas las funcionalidades: control de acceso biométrico, gestión de membresías, punto de venta y reportes. No requiere tarjeta de crédito."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Qué tipo de lector de huella necesito?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "ClubCheck es compatible con lectores de huella digital USB estándar. Recomendamos lectores con sensor óptico o capacitivo. También funciona con torniquetes que integren lectores biométricos."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Puedo enviar notificaciones por WhatsApp a mis socios?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Sí, ClubCheck incluye integración con WhatsApp para enviar recordatorios de vencimiento de membresías, confirmaciones de pago y notificaciones personalizadas de forma automática."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Funciona para box de CrossFit?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Sí, ClubCheck está diseñado para todo tipo de centros fitness: gimnasios tradicionales, boxes de CrossFit, estudios de yoga, centros de entrenamiento funcional, clubes deportivos y más."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Qué pasa si supero los 20 socios?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Cuando tu gimnasio crezca más allá de 20 socios, puedes actualizar a un plan de pago mensual flexible. Los planes se adaptan al tamaño de tu negocio y mantienen todas las funcionalidades plus soporte prioritario."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿ClubCheck funciona sin internet?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "ClubCheck funciona de forma local en tu computadora. No requiere conexión permanente a internet para el control de acceso y operaciones básicas. Los datos se sincronizan cuando hay conexión disponible."
+					}
+				}
+			]
+		}
+		</script>
+		
+		<!-- Schema.org - HowTo (Instrucciones de instalación) -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "HowTo",
+			"name": "Cómo instalar ClubCheck en tu gimnasio",
+			"description": "Guía rápida para instalar y configurar ClubCheck en tu gimnasio en menos de 10 minutos",
+			"totalTime": "PT10M",
+			"estimatedCost": {
+				"@type": "MonetaryAmount",
+				"currency": "MXN",
+				"value": "0"
+			},
+			"step": [
+				{
+					"@type": "HowToStep",
+					"position": 1,
+					"name": "Descargar ClubCheck",
+					"text": "Descarga el instalador gratuito de ClubCheck desde nuestra página oficial",
+					"url": "https://clubcheck.com.mx/#gratis"
+				},
+				{
+					"@type": "HowToStep",
+					"position": 2,
+					"name": "Instalar el software",
+					"text": "Ejecuta el instalador y sigue las instrucciones en pantalla. La instalación toma menos de 2 minutos."
+				},
+				{
+					"@type": "HowToStep",
+					"position": 3,
+					"name": "Configurar tu gimnasio",
+					"text": "Ingresa los datos de tu gimnasio, configura los planes de membresía y conecta tu lector de huella digital."
+				},
+				{
+					"@type": "HowToStep",
+					"position": 4,
+					"name": "Registrar socios",
+					"text": "Comienza a registrar a tus socios con sus datos y huellas digitales. ¡Listo para operar!"
+				}
+			]
+		}
+		</script>
+		
+		<!-- Preconnect to External Resources -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/animations.css" />
+		<link rel="icon" href="images/icon.ico" type="image/x-icon">
+		 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header / Hero Principal -->
+					<header id="header" class="alt hero-split">
+						<div class="hero-content">
+							
+							<div class="hero-text">
+								<h1>La solución definitiva para administrar tu club deportivo</h1>
+								<p class="hero-subtitle">Automatiza el control de acceso, gestiona membresías y aumenta la rentabilidad de tu negocio con datos en tiempo real.</p>
+								<!-- <p class="hero-highlight">
+									<span class="icon solid fa-shield-alt"></span>
+									Plan gratuito permanente hasta 20 membresías activas. Sin tarjeta de crédito.
+								</p> -->
+							</div>
+							<div class="hero-cta">
+								<a class="btn-download primary" href="https://apiosw.clubcheck.com.mx/api/download-setup" download="setup.zip" aria-label="Descargar ClubCheck gratis">
+									<i class="fa-brands fa-windows"></i> Descargar para windows
+								</a>
+								<!-- <a class="btn-whatsapp" href="https://wa.me/526241611110?text=Hola,%20me%20interesa%20una%20demostración%20de%20ClubCheck" target="_blank" rel="noopener" aria-label="Solicitar demostración por WhatsApp">
+									<span class="icon brands fa-whatsapp"></span> Solicitar demo
+								</a> -->
+							</div>
+							<!-- <div class="trust-badge">
+								<span class="icon solid fa-check-circle"></span>
+								Instalación en 2 minutos · Soporte en español · Datos seguros
+							</div> -->
+						</div>
+						
+						<!-- Mockup de computadora -->
+						<div class="hero-mockup">
+							<div class="laptop-frame">
+								<div class="laptop-screen">
+									<img src="/images/inicio.png" alt="Panel de control ClubCheck - Vista del dashboard principal" loading="eager">
+								</div>
+								<div class="laptop-base"></div>
+							</div>
+						</div>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav" aria-label="Navegación principal">
+						<ul>
+							<li><a href="#beneficios" class="active">Beneficios</a></li>
+							<li><a href="#funcionalidades">Funcionalidades</a></li>
+							<!-- <li><a href="#demo">Vista previa</a></li> -->
+							<li><a href="#gratis">Plan gratuito</a></li>
+							<li><a href="#contacto">Contacto</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Sección: Problema y Solución -->
+							<section id="beneficios" class="main reveal">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Deja atrás las hojas de cálculo y el papeleo</h2>
+										</header>
+										<p>Gestionar un club deportivo con herramientas improvisadas consume tiempo y genera errores. 
+											<strong>ClubCheck</strong> centraliza la administración de tu negocio en una plataforma 
+											diseñada específicamente para clubes deportivos, permitiéndote enfocarte en lo que 
+											realmente importa: hacer crecer tu comunidad.</p>
+										<ul class="actions">
+											<li><a href="#funcionalidades" class="button">Explorar funcionalidades</a></li>
+										</ul>
+									</div>
+									<span class="logo2">
+										<span class="content-logo">
+											<span class="icon">
+												<span class="text1">Club</span><span class="text2">Check</span>
+											</span>
+										</span>
+									</span>
+								</div>
+							</section>
+
+						<!-- Sección: Funcionalidades principales -->
+							<section id="funcionalidades" class="main special">
+								<header class="major reveal">
+									<h2>Herramientas profesionales para tu club deportivo</h2>
+									<p>Todo lo que necesitas para operar eficientemente desde el primer día</p>
+								</header>
+								<ul class="features stagger-children">
+									<li>
+										<span class="icon solid major style1 fa-fingerprint"></span>
+										<h3>Acceso biométrico inteligente</h3>
+										<p>Valida la entrada de socios mediante huella dactilar. 
+											El sistema verifica automáticamente el estado de la membresía en tiempo real.</p>
+									</li>
+									<li>
+										<span class="icon solid major style3 fa-id-card"></span>
+										<h3>Gestión integral de membresías</h3>
+										<p>Administra planes y fechas de vencimientos. 
+											Mantén el control total de los pagos.</p>
+									</li>
+									<li>
+										<span class="icon brands major whatsapp-green fa-whatsapp"></span>
+										<h3>Alertas automáticas por WhatsApp</h3>
+										<p>Envía recordatorios de vencimiento y notificaciones importantes 
+											directamente al celular de tus socios.</p>
+									</li>
+								</ul>
+								<ul class="features stagger-children">
+									<li>
+										<span class="icon solid major style2 fa-shopping-cart"></span>
+										<h3>Punto de venta integrado</h3>
+										<p>Registra ventas de suplementos, bebidas y productos adicionales. 
+											Genera tickets y lleva el control de cada transacción.</p>
+									</li>
+									<li>
+										<span class="icon solid major style4 fa-boxes"></span>
+										<h3>Control de inventario</h3>
+										<p>Monitorea existencias de tu inventario en tiempo real. 
+											
+									</li>
+									<li>
+										<span class="icon solid major style5 fa-chart-bar"></span>
+										<h3>Reportes y analítica</h3>
+										<p>Accede a métricas de ingresos, asistencia y ventas. 
+											Toma decisiones informadas basadas en datos reales.</p>
+									</li>
+								</ul>
+								<ul class="features stagger-children">
+									<li>
+										<span class="icon solid major style1 fa-door-open"></span>
+										<h3>Integración con torniquetes</h3>
+										<p>Conecta el sistema con hardware de acceso físico 
+											para una automatización completa de las entradas.</p>
+									</li>
+									<li>
+										<span class="icon solid major style3 fa-history"></span>
+										<h3>Historial detallado</h3>
+										<p>Cada pago, acceso y venta queda registrado. 
+											Consulta el historial completo de cualquier socio al instante.</p>
+									</li>
+									<li>
+										<span class="icon solid major style5 fa-bolt"></span>
+										<h3>Implementación inmediata</h3>
+										<p>Interfaz intuitiva que no requiere capacitación técnica. 
+											Configura tu club deportivo en menos de 10 minutos.</p>
+									</li>
+								</ul>
+							</section>
+
+						
+
+						<!-- Sección: Plan Gratuito (DESTACADA) -->
+							<section id="gratis" class="main special">
+								<header class="major reveal">
+									<h2>Comienza sin costo, sin compromiso</h2>
+									<p>Accede a todas las funcionalidades sin inversión inicial</p>
+								</header>
+								<div class="pricing-card free reveal-scale">
+									<div class="pricing-header">
+										<span class="pricing-badge">Gratuito</span>
+										<h3>Plan Starter</h3>
+										<p class="pricing-desc">Ideal para club deportivos pequeños o para evaluar el sistema</p>
+									</div>
+									<div class="pricing-features">
+										<div class="pricing-feature">
+											<span class="icon solid fa-users"></span>
+											<span>Hasta 20 membresías activas</span>
+										</div>
+										<div class="pricing-feature">
+											<span class="icon solid fa-fingerprint"></span>
+											<span>Control de acceso biométrico completo</span>
+										</div>
+										<div class="pricing-feature">
+											<span class="icon solid fa-id-card"></span>
+											<span>Gestión de membresías sin límites</span>
+										</div>
+										<div class="pricing-feature">
+											<span class="icon brands fa-whatsapp"></span>
+											<span>Notificaciones automáticas por WhatsApp</span>
+										</div>
+										<div class="pricing-feature">
+											<span class="icon solid fa-chart-bar"></span>
+											<span>Reportes y analítica de tu negocio</span>
+										</div>
+									</div>
+									<div class="pricing-footer">
+										<p class="pricing-note">Sin límite de tiempo. Sin funcionalidades bloqueadas.</p>
+										<a class="btn-download primary large" href="https://apiosw.clubcheck.com.mx/api/download-setup" download="setup.zip" aria-label="Descargar ClubCheck gratis">
+											<i class="fa-brands fa-windows"></i> Descargar para Windows
+										</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Sección: Planes de crecimiento -->
+							<section id="planes" class="main special">
+								<header class="major reveal">
+									<h2>Escala cuando tu negocio crezca</h2>
+									<p>Planes flexibles que se adaptan al tamaño de tu club deportivo</p>
+								</header>
+								<div class="growth-content reveal">
+									<p>Cuando superes las 20 membresías activas, actualiza a un plan de pago mensual 
+										que se ajusta a tus necesidades reales.</p>
+									<ul class="features compact stagger-children">
+										<li>
+											<span class="icon solid major style2 fa-users"></span>
+											<h3>Socios ilimitados</h3>
+											<p>Sin restricciones en la cantidad de socios.</p>
+										</li>
+										<li>
+											<span class="icon solid major style4 fa-headset"></span>
+											<h3>Soporte dedicado</h3>
+											<p>Atención prioritaria por WhatsApp y asistencia técnica remota.</p>
+										</li>
+										<li>
+											<span class="icon solid major style5 fa-rocket"></span>
+											<h3>Módulos avanzados</h3>
+											<p>Acceso a funcionalidades premium según tu operación.</p>
+										</li>
+									</ul>
+									<p class="cta-text">¿Necesitas un plan a medida para tu club deportivo?</p>
+									<a class="btn-whatsapp large" href="https://wa.me/526241611110?text=Hola,%20quiero%20información%20sobre%20los%20planes%20de%20ClubCheck%20para%20mi%20club deportivo" target="_blank" rel="noopener" aria-label="Consultar planes por WhatsApp">
+										<span class="icon brands fa-whatsapp"></span> <span style="color: #000;">Consultar planes disponibles</span>
+									</a>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer / Contacto -->
+					<footer id="footer">
+						<section id="contacto" class="reveal">
+							<h2>¿Tienes preguntas? Estamos para ayudarte</h2>
+							<p>Nuestro equipo responde en menos de 24 horas. Escríbenos sin compromiso.</p>
+							<ul class="actions">
+								<a class="btn-whatsapp-text" href="https://wa.me/526241611110?text=Hola,%20tengo%20una%20consulta%20sobre%20ClubCheck" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+									<span class="icon brands fa-whatsapp"></span> Enviar mensaje por WhatsApp
+								</a>
+							</ul>
+						</section>
+						<section class="reveal">
+							<h2>Información de contacto</h2>
+							<dl class="alt">
+								<dt>WhatsApp</dt>
+								<dd><a href="https://wa.me/526241611110" rel="noopener">(+52) 624-161-1110</a></dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:oswaldocuevasdev@gmail.com">oswaldocuevasdev@gmail.com</a></dd>
+							</dl>
+						</section>
+						
+					</footer>
+
+			</div>
+
+		<!-- Botón flotante de WhatsApp -->
+
+		
+
+		<a href="https://wa.me/526241611110?text=Hola,%20me%20interesa%20ClubCheck" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+			<span class="icon brands fa-whatsapp"></span>
+		</a>
+
+		<!-- Modal Lightbox para imágenes -->
+		<div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+			<span class="modal-close" onclick="closeModal()" aria-label="Cerrar">&times;</span>
+			<div class="modal-content">
+				<img id="modal-image" src="" alt="">
+				<p id="modal-caption"></p>
+			</div>
+			<button class="modal-nav prev" onclick="modalNavigate(-1)" aria-label="Imagen anterior">&#10094;</button>
+			<button class="modal-nav next" onclick="modalNavigate(1)" aria-label="Imagen siguiente">&#10095;</button>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/clubcheck.js"></script>
+
+	</body>
+</html>
