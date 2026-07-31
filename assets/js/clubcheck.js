@@ -151,6 +151,24 @@
 		});
 	}
 
+	/**
+	 * Track WhatsApp clicks as Google Ads conversions.
+	 */
+	function initWhatsAppConversionTracking() {
+		const whatsappLinks = document.querySelectorAll('a[href*="wa.me/"]');
+		if (whatsappLinks.length === 0) return;
+
+		whatsappLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				if (typeof window.gtag !== 'function') return;
+
+				window.gtag('event', 'conversion', {
+					'send_to': 'AW-18316489980'
+				});
+			});
+		});
+	}
+
 	/* ========================================
 	   CAROUSEL FUNCTIONALITY
 	   ======================================== */
@@ -291,6 +309,7 @@
 		initCarousel();
 		initModal();
 		initNavigationReveal();
+		initWhatsAppConversionTracking();
 	}
 
 	/**
