@@ -157,10 +157,26 @@
 	function initWhatsAppConversionTracking() {
 		const whatsappLinks = document.querySelectorAll('a[href*="wa.me/"]');
 		if (whatsappLinks.length === 0) return;
+		let lastUserInteractionAt = 0;
+
+		const markUserInteraction = () => {
+			lastUserInteractionAt = Date.now();
+		};
+
+		['pointerdown', 'mousedown', 'touchstart', 'keydown'].forEach(eventName => {
+			document.addEventListener(eventName, markUserInteraction, {
+				capture: true,
+				passive: true
+			});
+		});
+
+		const hasRecentUserInteraction = () => {
+			return Date.now() - lastUserInteractionAt < 2000;
+		};
 
 		whatsappLinks.forEach(link => {
 			link.addEventListener('click', event => {
-				if (typeof window.gtag !== 'function') return;
+				if (typeof window.gtag !== 'function' || !hasRecentUserInteraction()) return;
 
 				event.preventDefault();
 				const url = link.href;
