@@ -159,12 +159,31 @@
 		if (whatsappLinks.length === 0) return;
 
 		whatsappLinks.forEach(link => {
-			link.addEventListener('click', () => {
+			link.addEventListener('click', event => {
 				if (typeof window.gtag !== 'function') return;
 
+				event.preventDefault();
+				const url = link.href;
+				let conversionSent = false;
+
+				const openWhatsApp = () => {
+					if (conversionSent) return;
+					conversionSent = true;
+
+					if (link.target === '_blank') {
+						window.open(url, '_blank', 'noopener');
+					} else {
+						window.location.href = url;
+					}
+				};
+
 				window.gtag('event', 'conversion', {
-					'send_to': 'AW-18316489980'
+					'send_to': 'AW-18316489980/ZVeGCKbhs9QcEPzp_Z1E',
+					'transaction_id': '',
+					'event_callback': openWhatsApp
 				});
+
+				setTimeout(openWhatsApp, 1000);
 			});
 		});
 	}
