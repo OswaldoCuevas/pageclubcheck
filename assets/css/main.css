@@ -4426,6 +4426,37 @@ input, select, textarea {
 	font-size: 1.1em;
 }
 
+/* Demo video */
+.demo-section {
+	background: #f7f8fb;
+}
+
+.demo-section .major {
+	margin-bottom: 2em;
+}
+
+.demo-video-wrap {
+	width: min(100%, 980px);
+	margin: 0 auto;
+	padding: 0.75em;
+	background: #111827;
+	border-radius: 8px;
+	box-shadow: 0 22px 60px rgba(31, 38, 54, 0.22);
+}
+
+.demo-video {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	background: #000000;
+	border-radius: 4px;
+	object-fit: contain;
+}
+
+.demo-actions {
+	margin-top: 1.75em;
+}
+
 /* Benefits Inline Tags */
 .benefits-inline {
 	display: flex;

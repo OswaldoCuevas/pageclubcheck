@@ -204,6 +204,28 @@
 		});
 	}
 
+	/**
+	 * Auto-play the demo video when most of it is visible.
+	 */
+	function initDemoVideoAutoplay() {
+		const demoVideo = document.querySelector('.demo-video');
+		if (!demoVideo || typeof IntersectionObserver !== 'function') return;
+
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					demoVideo.play().catch(() => {});
+				} else {
+					demoVideo.pause();
+				}
+			});
+		}, {
+			threshold: 0.55
+		});
+
+		observer.observe(demoVideo);
+	}
+
 	/* ========================================
 	   CAROUSEL FUNCTIONALITY
 	   ======================================== */
@@ -345,6 +367,7 @@
 		initModal();
 		initNavigationReveal();
 		initWhatsAppConversionTracking();
+		initDemoVideoAutoplay();
 	}
 
 	/**
