@@ -8,7 +8,7 @@
   <title>ClubCheck | Todo tu gimnasio en un solo lugar</title>
   <link rel="icon" href="images/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="assets/css/alternate.css?v=10">
+  <link rel="stylesheet" href="assets/css/alternate.css?v=19">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Ir al contenido</a>
@@ -58,8 +58,8 @@
           </div>
           <div class="hero-points" aria-label="Ventajas principales">
             <div><span class="mini-icon lilac"><i class="fas fa-bolt"></i></span><span class="point-copy"><strong>Fácil de usar</strong><small>Sin complicaciones</small></span></div>
-            <div><span class="mini-icon blue"><i class="fas fa-wifi"></i></span><span class="point-copy"><strong>Opera localmente</strong><small>Accesos sin depender de internet</small></span></div>
-            <div><span class="mini-icon mint"><i class="fas fa-shield-alt"></i></span><span class="point-copy"><strong>Implementación rápida</strong><small>Configura tu club en minutos</small></span></div>
+            <div><span class="mini-icon blue"><i class="fas fa-wifi"></i></span><span class="point-copy"><strong>Con y sin internet</strong><small>Sigue operando y sincroniza al conectarte</small></span></div>
+            <div><span class="mini-icon mint"><i class="fas fa-cloud"></i></span><span class="point-copy"><strong>Datos seguros en la nube</strong><small>Información respaldada y siempre actualizada</small></span></div>
           </div>
         </div>
 
@@ -69,7 +69,7 @@
           <div class="computer-frame">
             <div class="computer-screen">
               <span class="computer-camera" aria-hidden="true"></span>
-              <img src="images\cubcheck-app-image.png" alt="Panel principal del sistema ClubCheck" width="1366" height="760">
+              <img src="images/cubcheck-app-image.png" alt="Panel principal del sistema ClubCheck" width="1632" height="912">
             </div>
             <div class="computer-base"><span aria-hidden="true"></span></div>
           </div>
@@ -90,11 +90,11 @@
     <section class="demo section-pad" id="demo">
       <div class="container demo-grid">
         <div class="video-card" data-reveal="left">
-          <video controls muted playsinline preload="metadata" poster="images\cubcheck-app-image.png" aria-label="Video de demostración de ClubCheck">
+          <video controls playsinline preload="metadata" poster="images/cubcheck-app-image.png" aria-label="Video de demostración de ClubCheck">
             <source src="assets/videos/demo-clubcheck.mp4" type="video/mp4">
             Tu navegador no puede reproducir este video.
           </video>
-          <div class="video-badge"><span class="pulse-ring"><i class="fas fa-play"></i></span><strong>Demo del sistema</strong></div>
+          <button class="video-badge" type="button" data-play-video aria-label="Reproducir demo del sistema con sonido"><span class="pulse-ring"><i class="fas fa-play"></i></span><strong>Demo del sistema</strong></button>
         </div>
         <div class="demo-copy" data-reveal="right">
           <p class="section-kicker">VIDEO DEMO</p>
@@ -160,6 +160,44 @@
       </div>
     </section>
 
+    <section class="owner-portal section-pad" id="portal-dueno">
+      <div class="container portal-grid">
+        <div class="phone-stage" data-reveal="left">
+          <div class="phone-orbit phone-orbit-one" aria-hidden="true"></div>
+          <div class="phone-orbit phone-orbit-two" aria-hidden="true"></div>
+          <div class="portal-device-image">
+            <!-- Esta imagen ya incluye la forma del teléfono. Reemplaza la ruta si deseas usar otra captura. -->
+            <img src="images/web_app_announcement.png" style="border-radius: 10px !important;" alt="Vista móvil del portal web de ClubCheck" width="853" >
+          </div>
+        </div>
+
+        <div class="portal-copy" data-reveal="right">
+          <p class="section-kicker">PORTAL WEB PARA DUEÑOS</p>
+          <h2>Tu gimnasio, <span>estés donde estés</span></h2>
+          <p class="portal-intro">Consulta la operación de tu gimnasio desde el navegador y mantén el control incluso cuando no estás en recepción.</p>
+
+          <div class="portal-benefits stagger-group">
+            <article data-reveal="up">
+              <span class="portal-icon purple"><i class="fas fa-chart-line"></i></span>
+              <div><h3>Estadísticas y reportes</h3><p>Revisa los indicadores principales y consulta reportes de la operación.</p></div>
+            </article>
+            <article data-reveal="up">
+              <span class="portal-icon blue"><i class="fas fa-broadcast-tower"></i></span>
+              <div><h3>Monitoreo en tiempo real</h3><p>Conoce lo que sucede en tu gimnasio desde cualquier lugar.</p></div>
+            </article>
+            <article data-reveal="up">
+              <span class="portal-icon green"><i class="fas fa-user-check"></i></span>
+              <div><h3>Control de asistencias</h3><p>Supervisa accesos y movimientos registrados durante el día.</p></div>
+            </article>
+            <article data-reveal="up">
+              <span class="portal-icon amber"><i class="fas fa-shield-alt"></i></span>
+              <div><h3>Autorizaciones remotas</h3><p>Permite operaciones de forma remota cuando tu equipo lo necesite.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="free-banner-wrap">
       <div class="container">
         <div class="free-banner" data-reveal="scale">
@@ -178,6 +216,7 @@
             <li><i class="fas fa-check"></i> Gestión de membresías</li>
             <li><i class="fas fa-check"></i> Notificaciones por WhatsApp</li>
             <li><i class="fas fa-check"></i> Reportes y analítica</li>
+            <li><i class="fas fa-check"></i> Respaldo y sincronización en la nube</li>
           </ul>
           <div class="product-box" aria-hidden="true">
             <div class="product-logo"><span class="brand-mark"><img src="images/logo_2.png" alt=""></span><strong>ClubCheck</strong></div>
@@ -204,11 +243,21 @@
             <h3>Starter</h3>
             <p class="price-audience">Hasta 20 membresías activas</p>
             <p class="price"><strong>$0</strong><span>MXN / mes</span></p>
-            <ul>
-              <li><i class="fas fa-check"></i> Gestión de membresías</li>
-              <li><i class="fas fa-check"></i> Control de acceso</li>
-              <li><i class="fas fa-check"></i> Punto de venta</li>
-              <li><i class="fas fa-check"></i> Reportes</li>
+            <p class="includes-label">Incluye:</p>
+            <ul class="plan-includes">
+              <li><i class="fas fa-check"></i> Hasta 20 membresías activas</li>
+              <li><i class="fas fa-check"></i> Gestión de socios y membresías</li>
+              <li><i class="fas fa-check"></i> Chequeo con huella dactilar</li>
+              <li><i class="fas fa-check"></i> Integración con torniquete y terminal facial Hikvision</li>
+              <li><i class="fas fa-check"></i> Punto de venta con hasta 10 productos</li>
+              <li><i class="fas fa-check"></i> Control de inventario</li>
+              <li><i class="fas fa-check"></i> Administradores ilimitados</li>
+              <li><i class="fas fa-check"></i> Reportes y estadísticas</li>
+              <li><i class="fas fa-check"></i> Historial de pagos y accesos</li>
+              <li><i class="fas fa-check"></i> Portal web para dueño</li>
+              <li><i class="fas fa-check"></i> Notificaciones por WhatsApp</li>
+              <li><i class="fas fa-check"></i> Respaldo y sincronización en la nube</li>
+              <li><i class="fas fa-check"></i> Soporte por correo</li>
             </ul>
             <a class="button button-outline button-block" href="https://apiosw.clubcheck.com.mx/api/download-setup" download="setup.zip">Descargar gratis</a>
           </article>
@@ -217,13 +266,23 @@
             <span class="popular-badge">PARA CRECER</span>
             <span class="price-icon purple"><i class="fas fa-star"></i></span>
             <h3>Plan mensual</h3>
-            <p class="price-audience">Para clubes con hasta 200 socios activos</p>
+            <p class="price-audience">Para clubes con hasta 200 membresías activos</p>
             <p class="price"><small>Desde</small><strong>$550</strong><span>MXN / mes</span></p>
-            <ul>
+            <p class="includes-label">Incluye:</p>
+            <ul class="plan-includes">
               <li><i class="fas fa-check"></i> Socios ilimitados</li>
-              <li><i class="fas fa-check"></i> Todas las funcionalidades</li>
+              <li><i class="fas fa-check"></i> Hasta 200 membresías activas</li>
+              <li><i class="fas fa-check"></i> Gestión de socios y membresías</li>
+              <li><i class="fas fa-check"></i> Chequeo con huella dactilar</li>
+              <li><i class="fas fa-check"></i> Integración con torniquete y terminal facial Hikvision</li>
+              <li><i class="fas fa-check"></i> Punto de venta con productos ilimitados</li>
+              <li><i class="fas fa-check"></i> Control de inventario</li>
+              <li><i class="fas fa-check"></i> Administradores ilimitados</li>
+              <li><i class="fas fa-check"></i> Reportes y estadísticas</li>
+              <li><i class="fas fa-check"></i> Historial de pagos y accesos</li>
+              <li><i class="fas fa-check"></i> Portal web para dueño</li>
+              <li><i class="fas fa-check"></i> Respaldo y sincronización en la nube</li>
               <li><i class="fas fa-check"></i> Soporte prioritario</li>
-              <li><i class="fas fa-check"></i> Módulos avanzados</li>
             </ul>
             <a class="button button-solid button-block" href="https://wa.me/526241611110?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20de%20ClubCheck" target="_blank" rel="noopener">Consultar este plan</a>
           </article>
@@ -231,11 +290,14 @@
           <article class="price-card" data-reveal="up">
             <span class="price-icon amber"><i class="fas fa-gem"></i></span>
             <h3>A la medida</h3>
-            <p class="price-audience">Para operaciones con necesidades especiales</p>
+            <p class="price-audience">Para más de 200 membresias activas o necesidades especiales</p>
             <p class="price price-text"><strong>Cotización</strong><span>personalizada</span></p>
-            <ul>
-              <li><i class="fas fa-check"></i> Configuración a tu operación</li>
-              <li><i class="fas fa-check"></i> Integración con hardware</li>
+            <p class="includes-label">Incluye:</p>
+            <ul class="plan-includes">
+              <li><i class="fas fa-check"></i> Todas las funciones del plan mensual</li>
+              <li><i class="fas fa-check"></i> Capacidad adaptada a tu operación</li>
+              <li><i class="fas fa-check"></i> Configuración personalizada</li>
+              <li><i class="fas fa-check"></i> Integración con hardware especializado</li>
               <li><i class="fas fa-check"></i> Atención prioritaria</li>
               <li><i class="fas fa-check"></i> Asistencia técnica remota</li>
             </ul>
@@ -295,6 +357,6 @@
   </footer>
 
   <a class="whatsapp-float" href="https://wa.me/526241611110?text=Hola,%20me%20interesa%20ClubCheck" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
-  <script src="assets/js/alternate.js"></script>
+  <script src="assets/js/alternate.js?v=2"></script>
 </body>
 </html>

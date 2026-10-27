@@ -8,7 +8,8 @@
   const mainNav = document.querySelector('.main-nav');
   const navLinks = document.querySelectorAll('.main-nav a');
   const video = document.querySelector('.video-card video');
-  const playButton = document.querySelector('[data-play-video]');
+  const videoCard = document.querySelector('.video-card');
+  const playButtons = document.querySelectorAll('[data-play-video]');
 
   function closeMenu() {
     if (!navToggle || !mainNav) return;
@@ -82,11 +83,27 @@
     pageSections.forEach(function (section) { sectionObserver.observe(section); });
   }
 
-  if (playButton && video) {
-    playButton.addEventListener('click', function (event) {
-      event.preventDefault();
-      video.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      window.setTimeout(function () { video.play().catch(function () {}); }, 450);
+  if (playButtons.length && video) {
+    playButtons.forEach(function (playButton) {
+      playButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        video.muted = false;
+        video.volume = 1;
+        video.play().catch(function () {});
+        video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    });
+
+    video.addEventListener('play', function () {
+      if (videoCard) videoCard.classList.add('is-playing');
+    });
+
+    video.addEventListener('pause', function () {
+      if (videoCard) videoCard.classList.remove('is-playing');
+    });
+
+    video.addEventListener('ended', function () {
+      if (videoCard) videoCard.classList.remove('is-playing');
     });
   }
 
